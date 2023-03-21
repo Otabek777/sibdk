@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -111,9 +112,188 @@
                 </div>
                 <h1>Каталог</h1>
                 <div class="catalog__box">
-                    <div class="catalog__aside">
-                        <div class="aside_wrap">
-                            
+                    <div class="aside">
+                        <div class="aside__wrap">
+                            <div class="aside__btn">
+                                Каталог
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                                        <path d="M1 1L3.29289 3.29289C3.68342 3.68342 4.31658 3.68342 4.70711 3.29289L7 1" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="aside__block">
+                                <div class="aside__ul">
+                                    <ul>
+                                        <li>
+                                            <p>Кровля</p>
+                                            <ul>
+                                                <li>
+                                                    <p>Водосточные системы</p>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Водосточные системы</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Забор</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Откатные ворота</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Дачные ограждения</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Теплицы</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Печи / дымоходы</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Забор</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Откатные ворота</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Дачные ограждения</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Теплицы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Печи / дымоходы</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Профнастил(профлист)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Фасадные материалы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Водосточные системы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Забор</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Откатные ворота</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Дачные ограждения</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Теплицы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Печи / дымоходы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Изоляционные материалы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Пена и герметики</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OSB(осб) плиты</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Чердачные лестницы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Мансардные окна</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Монтаж</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside__wrap">
+                            <div class="aside__btn">
+                                Параметры
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                                        <path d="M1 1L3.29289 3.29289C3.68342 3.68342 4.31658 3.68342 4.70711 3.29289L7 1" stroke="#222222" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="aside__block">
+                                <div class="aside__price">
+                                    <h6>Цена, руб:</h6>
+                                    <div class="price_num">
+                                        <p>
+                                            От
+                                            <input type="text" id="amount" readonly>
+                                        </p>
+                                        <p>
+                                            До
+                                            <input type="text" id="amount2" readonly>
+                                        </p>
+                                    </div>
+                                    <div class="slider-range">
+                                        <div id="slider-range"></div>
+                                    </div>
+                                </div>
+                                <div class="aside__checkbox">
+                                    <h6>Бренд:</h6>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="1">
+                                        <label for="1">Металл Профиль</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="2">
+                                        <label for="2">Docke</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="3">
+                                        <label for="3">Onduline</label>
+                                    </div>
+                                </div>
+                                <div class="aside__checkbox">
+                                    <h6>Тип покрытия:</h6>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="12">
+                                        <label for="12">Норман (Norman)</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="22">
+                                        <label for="22">Полиэстер (Pe)</label>
+                                    </div>
+                                </div>
+                                <div class="aside__checkbox">
+                                    <h6>Толщина:</h6>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="1112">
+                                        <label for="1112">0.4</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="2122">
+                                        <label for="2122">0.55</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="224">
+                                        <label for="224">0.45</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="223">
+                                        <label for="223">0.65</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="122">
+                                        <label for="122">0.5</label>
+                                    </div>
+                                    <div class="aside__check">
+                                        <input type="checkbox" id="222">
+                                        <label for="222">0.7</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="catalog__content">
@@ -242,7 +422,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -307,7 +497,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -372,7 +572,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -437,7 +647,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -502,7 +722,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -567,7 +797,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -632,7 +872,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -697,7 +947,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -762,7 +1022,17 @@
                                 <div class="catalog__price">
                                     <h4 class="price">607 <span>р /м2</span><p>607 р</p></h4>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                     <button class="btn1">Купить</button>
                                 </div>
@@ -908,23 +1178,22 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $('.product_img_slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.product_img_nav'
-        });
-        $('.product_img_nav').slick({
-            vertical: true,
-            verticalSwiping: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.product_img_slider',
-            dots: false,
-            focusOnSelect: true,
+        $( function() {
+          $( "#slider-range" ).slider({
+            range: true,
+            min: 777,
+            max: 148500,
+            values: [ 777, 148500 ],
+            slide: function( event, ui ) {
+              $( "#amount" ).val(ui.values[ 0 ]);
+              $( "#amount2" ).val(ui.values[ 1 ] );
+            }
+          });
+          $( "#amount" ).val($( "#slider-range" ).slider( "values", 0 ));
+          $( "#amount2" ).val($( "#slider-range" ).slider( "values", 1 ) );
         });
     </script>
 </body>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -125,7 +126,17 @@
                                 <div class="basket__text">
                                     <h5>Металлочерепица Viking | Ламонтерра Х</h5>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="basket__prodPrice">
@@ -144,7 +155,17 @@
                                 <div class="basket__text">
                                     <h5>Металлочерепица Viking | Ламонтерра Х</h5>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="basket__prodPrice">
@@ -163,7 +184,17 @@
                                 <div class="basket__text">
                                     <h5>Металлочерепица Viking | Ламонтерра Х</h5>
                                     <div class="product__quantity">
-
+                                        <button class="minus">
+                                            <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="num" value="1">
+                                        <button class="plus">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                            </svg>                                        
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="basket__prodPrice">
@@ -422,24 +453,9 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $('.product_img_slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.product_img_nav'
-        });
-        $('.product_img_nav').slick({
-            vertical: true,
-            verticalSwiping: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.product_img_slider',
-            dots: false,
-            focusOnSelect: true,
-        });
     </script>
 </body>
 </html>

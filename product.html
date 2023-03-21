@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -265,7 +266,17 @@
                         <div class="product__cart">
                             <h5 class="price">57 <span>р / шт</span></h5>
                             <div class="product__quantity">
-
+                                <button class="minus">
+                                    <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H18V2H0V0Z" fill="#222222"/>
+                                    </svg>
+                                </button>
+                                <input type="text" class="num" value="1">
+                                <button class="plus">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8H0V10H8V18H10V10H18V8H10V0Z" fill="#222222"/>
+                                    </svg>                                        
+                                </button>
                             </div>
                             <button class="btn_cart">В корзину</button>
                             <button class="product__buy">Купить в 1 клик</button>
@@ -415,152 +426,191 @@
                 </section>
                 <section class="products">
                     <h3>Выгодно <span>только сегодня!</span></h3>
-                    <div class="products__box">
-                        <div class="products__block">
-                            <span class="status">
-                                Хит
-                            </span>
-                            <span class="status2">
-                                ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ
-                            </span>
-                            <div class="image">
-                                <img src="img/product.png" alt="">
-                            </div>
-                            <h5>Металлочерепица Viking | Ламонтерра Х</h5>
-                            <ul>
-                                <li>
-                                    <h6>Толщина</h6>
-                                    <p>0,45 мм</p>
-                                </li>
-                                <li>
-                                    <h6>Покрытие</h6>
-                                    <p>VikingMP</p>
-                                </li>
-                                <li>
-                                    <h6>VikingMP</h6>
-                                    <p>10 лет</p>
-                                </li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="products__price">
-                                    <h4>607 <span>р /м2</span></h4>
-                                    <p>607 р</p>
+                    <div class="products__slider">
+                        <div class="products__wrap">
+                            <div class="products__block">
+                                <span class="status">
+                                    ЛУЧШАЯ ЦЕНА
+                                </span>
+                                <span class="status2">
+                                    ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ
+                                </span>
+                                <div class="image">
+                                    <img src="img/product.png" alt="">
                                 </div>
-                                <button class="products__btn">В корзину</button>
+                                <h5>Металлочерепица Viking | Ламонтерра Х</h5>
+                                <ul>
+                                    <li>
+                                        <h6>Толщина</h6>
+                                        <p>0,45 мм</p>
+                                    </li>
+                                    <li>
+                                        <h6>Покрытие</h6>
+                                        <p>VikingMP</p>
+                                    </li>
+                                    <li>
+                                        <h6>VikingMP</h6>
+                                        <p>10 лет</p>
+                                    </li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="products__price">
+                                        <h4>607 <span>р /м2</span></h4>
+                                        <p>607 р</p>
+                                    </div>
+                                    <button class="products__btn">В корзину</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="products__block">
-                            <span class="status">
-                                Лучшая цена
-                            </span>
-                            <span class="status2">
-                                ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ
-                            </span>
-                            <div class="image">
-                                <img src="img/product.png" alt="">
-                            </div>
-                            <h5>Металлочерепица Viking | Ламонтерра Х</h5>
-                            <ul>
-                                <li>
-                                    <h6>Толщина</h6>
-                                    <p>0,45 мм</p>
-                                </li>
-                                <li>
-                                    <h6>Покрытие</h6>
-                                    <p>VikingMP</p>
-                                </li>
-                                <li>
-                                    <h6>VikingMP</h6>
-                                    <p>10 лет</p>
-                                </li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="products__price">
-                                    <h4>607 <span>р /м2</span></h4>
-                                    <p>607 р</p>
+                        <div class="products__wrap">
+                            <div class="products__block">
+                                <span class="status">
+                                    Хит
+                                </span>
+                                <span class="status2">
+                                    ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ
+                                </span>
+                                <div class="image">
+                                    <img src="img/product.png" alt="">
                                 </div>
-                                <button class="products__btn">В корзину</button>
+                                <h5>Металлочерепица Viking | Ламонтерра Х</h5>
+                                <ul>
+                                    <li>
+                                        <h6>Толщина</h6>
+                                        <p>0,45 мм</p>
+                                    </li>
+                                    <li>
+                                        <h6>Покрытие</h6>
+                                        <p>VikingMP</p>
+                                    </li>
+                                    <li>
+                                        <h6>VikingMP</h6>
+                                        <p>10 лет</p>
+                                    </li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="products__price">
+                                        <h4>607 <span>р /м2</span></h4>
+                                        <p>607 р</p>
+                                    </div>
+                                    <button class="products__btn">В корзину</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="products__block">
-                            <div class="image">
-                                <img src="img/product.png" alt="">
-                            </div>
-                            <h5>Металлочерепица Viking | Ламонтерра Х</h5>
-                            <ul>
-                                <li>
-                                    <h6>Толщина</h6>
-                                    <p>0,45 мм</p>
-                                </li>
-                                <li>
-                                    <h6>Покрытие</h6>
-                                    <p>VikingMP</p>
-                                </li>
-                                <li>
-                                    <h6>VikingMP</h6>
-                                    <p>10 лет</p>
-                                </li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="products__price">
-                                    <h4>607 <span>р /м2</span></h4>
-                                    <p>607 р</p>
+                        <div class="products__wrap">
+                            <div class="products__block">
+                                <div class="image">
+                                    <img src="img/product.png" alt="">
                                 </div>
-                                <button class="products__btn">В корзину</button>
+                                <h5>Металлочерепица Viking | Ламонтерра Х</h5>
+                                <ul>
+                                    <li>
+                                        <h6>Толщина</h6>
+                                        <p>0,45 мм</p>
+                                    </li>
+                                    <li>
+                                        <h6>Покрытие</h6>
+                                        <p>VikingMP</p>
+                                    </li>
+                                    <li>
+                                        <h6>VikingMP</h6>
+                                        <p>10 лет</p>
+                                    </li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="products__price">
+                                        <h4>607 <span>р /м2</span></h4>
+                                        <p>607 р</p>
+                                    </div>
+                                    <button class="products__btn">В корзину</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="products__block">
-                            <div class="image">
-                                <img src="img/product.png" alt="">
-                            </div>
-                            <h5>Металлочерепица Viking | Ламонтерра Х</h5>
-                            <ul>
-                                <li>
-                                    <h6>Толщина</h6>
-                                    <p>0,45 мм</p>
-                                </li>
-                                <li>
-                                    <h6>Покрытие</h6>
-                                    <p>VikingMP</p>
-                                </li>
-                                <li>
-                                    <h6>VikingMP</h6>
-                                    <p>10 лет</p>
-                                </li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="products__price">
-                                    <h4>607 <span>р /м2</span></h4>
-                                    <p>607 р</p>
+                        <div class="products__wrap">
+                            <div class="products__block">
+                                <div class="image">
+                                    <img src="img/product.png" alt="">
                                 </div>
-                                <button class="products__btn">В корзину</button>
+                                <h5>Металлочерепица Viking | Ламонтерра Х</h5>
+                                <ul>
+                                    <li>
+                                        <h6>Толщина</h6>
+                                        <p>0,45 мм</p>
+                                    </li>
+                                    <li>
+                                        <h6>Покрытие</h6>
+                                        <p>VikingMP</p>
+                                    </li>
+                                    <li>
+                                        <h6>VikingMP</h6>
+                                        <p>10 лет</p>
+                                    </li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="products__price">
+                                        <h4>607 <span>р /м2</span></h4>
+                                        <p>607 р</p>
+                                    </div>
+                                    <button class="products__btn">В корзину</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="products__block">
-                            <div class="image">
-                                <img src="img/product.png" alt="">
-                            </div>
-                            <h5>Металлочерепица Viking | Ламонтерра Х</h5>
-                            <ul>
-                                <li>
-                                    <h6>Толщина</h6>
-                                    <p>0,45 мм</p>
-                                </li>
-                                <li>
-                                    <h6>Покрытие</h6>
-                                    <p>VikingMP</p>
-                                </li>
-                                <li>
-                                    <h6>VikingMP</h6>
-                                    <p>10 лет</p>
-                                </li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="products__price">
-                                    <h4>607 <span>р /м2</span></h4>
-                                    <p>607 р</p>
+                        <div class="products__wrap">
+                            <div class="products__block">
+                                <div class="image">
+                                    <img src="img/product.png" alt="">
                                 </div>
-                                <button class="products__btn">В корзину</button>
+                                <h5>Металлочерепица Viking | Ламонтерра Х</h5>
+                                <ul>
+                                    <li>
+                                        <h6>Толщина</h6>
+                                        <p>0,45 мм</p>
+                                    </li>
+                                    <li>
+                                        <h6>Покрытие</h6>
+                                        <p>VikingMP</p>
+                                    </li>
+                                    <li>
+                                        <h6>VikingMP</h6>
+                                        <p>10 лет</p>
+                                    </li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="products__price">
+                                        <h4>607 <span>р /м2</span></h4>
+                                        <p>607 р</p>
+                                    </div>
+                                    <button class="products__btn">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__wrap">
+                            <div class="products__block">
+                                <div class="image">
+                                    <img src="img/product.png" alt="">
+                                </div>
+                                <h5>Металлочерепица Viking | Ламонтерра Х</h5>
+                                <ul>
+                                    <li>
+                                        <h6>Толщина</h6>
+                                        <p>0,45 мм</p>
+                                    </li>
+                                    <li>
+                                        <h6>Покрытие</h6>
+                                        <p>VikingMP</p>
+                                    </li>
+                                    <li>
+                                        <h6>VikingMP</h6>
+                                        <p>10 лет</p>
+                                    </li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="products__price">
+                                        <h4>607 <span>р /м2</span></h4>
+                                        <p>607 р</p>
+                                    </div>
+                                    <button class="products__btn">В корзину</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -702,6 +752,7 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         $('.product_img_slider').slick({
@@ -719,6 +770,12 @@
             asNavFor: '.product_img_slider',
             dots: false,
             focusOnSelect: true,
+        });
+        $('.products__slider').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false
         });
     </script>
 </body>

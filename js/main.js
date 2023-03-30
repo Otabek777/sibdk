@@ -1,9 +1,56 @@
-$(".aside__btn").click(function() {
-    $(this).toggleClass("open");
-});
-$(".aside__ul li").children().click(function() {
-    $(this).toggleClass("open");
-});
+if($(".aside__ul")) {
+    $(".aside__btn").click(function() {
+        $(this).toggleClass("open");
+    });
+    $(".aside__ul li").children().click(function() {
+        $(this).toggleClass("open");
+    });
+};
+if(".catalog") {
+    function openFilter(btnFilter, btnFilterChild) {
+        $("."+btnFilter+"-filter-open").click(function () {
+            if($(this).hasClass("active")) {
+                $(".catalog-filter-open").removeClass("active");
+                $(".options-filter-open").removeClass("active");
+                $('.aside__btn').removeClass("open");
+                setTimeout(function() {
+                    $('.aside').removeClass("height");
+                },300);
+                $('.aside__wrap').removeClass("active");
+                $('.aside').removeClass("open");
+            } else {
+                $(".catalog-filter-open").removeClass("active");
+                $(".options-filter-open").removeClass("active");
+                $(this).addClass("active");
+                $('.aside__btn').removeClass("open");
+                $('.aside__wrap').removeClass("active");
+                $('.aside').addClass("open");
+                $('.aside__wrap:nth-child('+btnFilterChild+')').addClass("active");
+                setTimeout(function() {
+                    $('.aside').addClass("height");
+                },300);
+            }
+            
+            
+        });
+    };
+    openFilter("catalog", "1");
+    openFilter("options", "2");
+};
+if($(".tab")) {
+    function tabBtn(btnNumber) {
+        $("#tab-btn-"+btnNumber).click(function() {
+            $(".tab__btn .btn").removeClass("active");
+            $(".tab__block").removeClass("active");
+            $(this).addClass("active");
+            $("#tab-block-"+btnNumber).addClass("active");
+        });
+    };
+    tabBtn(1);
+    tabBtn(2);
+    tabBtn(3);
+    tabBtn(4);
+};
 $(window).scroll(function(){
     if ( $(this).scrollTop() > 50) {
         $('.header').addClass("fixed")
@@ -11,6 +58,7 @@ $(window).scroll(function(){
         $('.header').removeClass("fixed")
     }
 });
+
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
         [].forEach.call( document.querySelectorAll('.tel'), function(input) {

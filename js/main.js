@@ -29,9 +29,7 @@ if(".catalog") {
                 setTimeout(function() {
                     $('.aside').addClass("height");
                 },300);
-            }
-            
-            
+            };
         });
     };
     openFilter("catalog", "1");

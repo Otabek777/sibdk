@@ -402,6 +402,7 @@ ul {
 .header__search {
   padding-left: 20px;
   position: relative;
+  overflow: hidden;
 }
 .header__search .search {
   width: 370px;
@@ -3479,8 +3480,17 @@ h2 span {
   section {
     display: none;
   }
-  .header.fixed .header__bottom {
-    position: static;
+  .header__search {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .header.fixed .header__phone {
+    display: none;
+  }
+  .header.fixed .header__soc {
+    position: fixed;
+    z-index: 999;
+    top: 32px;
   }
   .header__navbar {
     display: none;
@@ -3567,7 +3577,7 @@ h2 span {
     display: none;
   }
   .header__wrap {
-    min-height: auto;
+    min-height: 122px;
   }
   .banner {
     display: block;

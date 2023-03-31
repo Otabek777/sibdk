@@ -4875,4 +4875,10 @@ h2 span {
     width: 100%;
     overflow: hidden;
   }
+  .news__wrap {
+    display: none;
+  }
+  .news__wrap:nth-child(1), .news__wrap:nth-child(2) {
+    display: block;
+  }
 }

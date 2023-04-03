@@ -12,23 +12,15 @@ if(".catalog") {
             if($(this).hasClass("active")) {
                 $(".catalog-filter-open").removeClass("active");
                 $(".options-filter-open").removeClass("active");
-                $('.aside__btn').removeClass("open");
-                setTimeout(function() {
-                    $('.aside').removeClass("height");
-                },300);
                 $('.aside__wrap').removeClass("active");
                 $('.aside').removeClass("open");
             } else {
                 $(".catalog-filter-open").removeClass("active");
                 $(".options-filter-open").removeClass("active");
                 $(this).addClass("active");
-                $('.aside__btn').removeClass("open");
                 $('.aside__wrap').removeClass("active");
                 $('.aside').addClass("open");
                 $('.aside__wrap:nth-child('+btnFilterChild+')').addClass("active");
-                setTimeout(function() {
-                    $('.aside').addClass("height");
-                },300);
             };
         });
     };
@@ -56,7 +48,21 @@ $(window).scroll(function(){
         $('.header').removeClass("fixed")
     }
 });
-
+if($(".product__quantity")) {
+    var quantity = $(".product__quantity");
+    quantity.children(".plus").click(function() {
+        $(this).prev(".num").val( function(i, oldval) {
+            return ++oldval;
+        });
+    });
+    quantity.children(".minus").click(function() {
+        if($(this).next(".num").val() != 1) {
+            $(this).next(".num").val( function(i, oldval) {
+                return --oldval;
+            });
+        };
+    });
+};
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
         [].forEach.call( document.querySelectorAll('.tel'), function(input) {

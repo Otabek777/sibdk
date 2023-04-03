@@ -2834,9 +2834,6 @@ h2 span {
 .basket__content h3 {
   margin-bottom: 20px;
 }
-.basket__content .basket__aside_wrap {
-  display: none;
-}
 
 .basket__aside {
   max-width: 380px;
@@ -2850,7 +2847,7 @@ h2 span {
           box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   position: sticky;
-  top: 30px;
+  top: 150px;
 }
 
 .basket__price {
@@ -4005,22 +4002,28 @@ h2 span {
             align-items: center;
   }
   .aside {
-    min-width: calc(100% + 30px);
-    margin-left: -15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    min-width: 100%;
     height: 0;
     overflow: hidden;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    position: fixed;
+    bottom: 73px;
+    left: 0;
+    z-index: 99;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05), 0px 1px 1px rgba(0, 0, 0, 0.05);
   }
   .aside.open {
-    height: 95px;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    height: 357px;
+    overflow-y: auto;
   }
-  .aside.open.height {
-    height: auto;
+  .aside__btn {
+    display: none;
+  }
+  .aside__block {
+    max-height: 100%;
   }
   .aside__wrap {
     display: none;
@@ -4317,23 +4320,19 @@ h2 span {
   .basket__content {
     max-width: 100%;
   }
-  .basket__content .basket__aside_wrap {
-    display: block;
-  }
   .basket__aside {
     max-width: 100%;
-  }
-  .basket__aside .basket__aside_wrap {
-    display: none;
   }
   .basket__aside_wrap {
     margin-bottom: 30px;
     padding: 20px;
   }
   .basket__price {
+    display: none;
     padding-bottom: 10px;
   }
   .basket__characteristics {
+    display: none;
     padding-bottom: 15px;
     margin-bottom: 10px;
   }

@@ -3,8 +3,9 @@ if($(".aside__ul")) {
         $(this).toggleClass("open");
     });
     $(".aside__ul li").children().click(function() {
-        $(this).toggleClass("open");
+        $(this).parent().toggleClass("open");
     });
+    $(".aside__ul li ul").prev("p").addClass("aside__down");
 };
 if(".catalog") {
     function openFilter(btnFilter, btnFilterChild) {

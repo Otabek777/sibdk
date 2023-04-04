@@ -4891,11 +4891,11 @@ h2 span {
     display: block;
   }
   .aside__ul li {
+    background: #FFFFFF;
     font-size: 14px;
     line-height: 19px;
   }
   .aside__ul li a, .aside__ul li p {
-    background: #FFFFFF;
     padding: 10px 0;
     border-bottom: 1px solid #ECECEC;
   }
